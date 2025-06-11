@@ -23,11 +23,11 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/vehicle/**
-        - id: parking-server
+        - id: parking-service
           uri: http://localhost:8083
           predicates:
             - Path=/parking/**
-        - id: payment-server
+        - id: payment-service
           uri: http://localhost:8084
           predicates:
             - Path=/payment/**
