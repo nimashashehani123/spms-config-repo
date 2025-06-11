@@ -13,19 +13,19 @@ spring:
           lower-case-service-id: true
       routes:
         - id: user-service
-          uri: http://localhost:8081
+          uri: lb://user-service
           predicates:
             - Path=/user/**
         - id: vehicle-service
-          uri: http://localhost:8082
+          uri: lb://vehicle-service
           predicates:
             - Path=/vehicle/**
         - id: parking-service
-          uri: http://localhost:8083
+          uri: lb://parking-service
           predicates:
             - Path=/parking/**
         - id: payment-service
-          uri: http://localhost:8084
+          uri: lb://payment-service
           predicates:
             - Path=/payment/**
 
