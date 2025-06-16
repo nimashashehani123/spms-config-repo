@@ -26,3 +26,8 @@ spring:
           uri: lb://payment-service
           predicates:
             - Path=/api/v1/payments/**
+
+        - id: reservation-service
+          uri: lb://reservation-service
+          predicates:
+            - Path=/api/v1/reservations/**
