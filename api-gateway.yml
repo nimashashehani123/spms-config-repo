@@ -11,7 +11,7 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/v1/users/**
-         filters:
+          filters:
             - name: GatewayJwt
 
 
