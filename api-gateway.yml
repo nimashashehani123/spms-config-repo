@@ -44,6 +44,5 @@ spring:
             - name: GatewayJwt
 jwt:
   secret: k0HgZ2Ff7I1N4eHV2RuYB6UYZgDY5X3Lk4zGuMVRTRH1QoAnzj5X9TZGf6R2AbMVqepnqQo/ErwdDbnLJ3vSsw==
-
 app:
   base-url: http://localhost:8080   # ✅ added
