@@ -11,37 +11,27 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/v1/users/**
-          filters:
-            - name: GatewayJwt
-
-
+            
         - id: vehicle-service
           uri: lb://vehicle-service
           predicates:
             - Path=/api/v1/vehicles/**
-          filters:
-            - name: GatewayJwt
 
         - id: parking-service
           uri: lb://parking-service
           predicates:
             - Path=/api/v1/parkings/**
-          filters:
-            - name: GatewayJwt
-            
+        
         - id: payment-service
           uri: lb://payment-service
           predicates:
             - Path=/api/v1/payments/**
-          filters:
-            - name: GatewayJwt
 
         - id: reservation-service
           uri: lb://reservation-service
           predicates:
             - Path=/api/v1/reservations/**
-          filters:
-            - name: GatewayJwt
+
 jwt:
   secret: 2D4A614E645267556B58703273357638792F423F4428472B4B6250655368566D
 app:
