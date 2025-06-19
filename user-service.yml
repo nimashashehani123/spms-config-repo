@@ -23,6 +23,6 @@ spring:
     allow-circular-references: true         # ✅ added
     
 jwt:
-  secret: 2D4A614E645267556B58703273357638792F423F4428472B4B6250655368566D
+  secret: Ey3q0Tb41rDzVo6Fy+JWmiXg7o+U4CD6HKWZ1v0U9c4rTzUv7On6YUzZ1M7YZIlCKMaGVwzHVE9XmDLg0cOszA==
 app:
   base-url: http://localhost:8080   # ✅ added
