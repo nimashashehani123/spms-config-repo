@@ -13,7 +13,6 @@ spring:
             - Path=/api/v1/users/**
           filters:
             - RemoveRequestHeader=Cookie
-            - AddRequestHeader=Authorization, #{request.headers['authorization']}
             
         - id: vehicle-service
           uri: lb://vehicle-service
